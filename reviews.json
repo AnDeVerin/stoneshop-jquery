@@ -1,0 +1,25 @@
+{
+  "result": 1,
+  "comments": [
+    {
+      "id_comment": 1,
+      "id_user": "Анна",
+      "text": "Мой любимый магазин. Чудесный товар. Всё круто!"
+    },
+    {
+      "id_comment": 2,
+      "id_user": "Сергей",
+      "text": "Поддерживаю Анну. Мой любимый магазин. Чудесный товар.\nВсё круто!\nLorem ipsum dolor sit amet, consectetur adipisicing elit. Ex facilis possimus quaerat qui! Ab aperiam dolore eligendi enim explicabo fugit inventore itaque laborum porro repellat repellendus sapiente tempora temporibus, voluptates?"
+    },
+    {
+      "id_comment": 3,
+      "id_user": "Иван",
+      "text": "Ненавижу это место.\nНИКОМУ НЕ СОВЕТУЮ."
+    },
+    {
+      "id_comment": 4,
+      "id_user": "Рыба",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.\nAb ad assumenda corporis debitis expedita facilis in minima molestiae necessitatibus, nesciunt officia praesentium, quae quas quos, reprehenderit sit temporibus voluptas. Quidem!"
+    }
+  ]
+}

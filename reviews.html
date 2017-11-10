@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Reviews</title>
+    <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.min.css">
+    <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.theme.min.css">
+    <script src="jquery-ui-1.12.1.custom/external/jquery/jquery.js"></script>
+    <link rel="stylesheet" href="reviews.css">
+    <script src="Review.js"></script>
+    <script>
+        $(document).ready(function () {
+            var review = new Review("review", "#r-list");
+            //console.log(review);
+
+            $(".add-review").on("click", function () {
+                $(this).hide();
+                $(".new-review").slideDown();
+            });
+
+            $("#add").on("click", function () {
+                review.addComment();
+                $(".new-review").hide();
+                $(".add-review").show();
+                $("#reset").click();
+            });
+
+        });
+    </script>
+
+</head>
+<body>
+<div class="container">
+    <a href="index.html" class="back">&#9204; Вернуться <em>(back to shop)</em></a>
+    <h1>Отзывы</h1>
+    <hr>
+    <div id="r-list" class="review-list"></div>
+    <hr>
+    <span class="add-review">+ Добавить <em>(add a comment)</em></span>
+    <div class="new-review card ui-widget-content ui-corner-all">
+        <form action="">
+            <p class="new-review__name">Новый отзыв</p>
+            <div>
+                <span class="txt-mark">Ваше имя</span>
+                <input id="name" class="inp-mark" type="text">
+            </div>
+            <div>
+                <span class="txt-mark">Сообщение</span>
+                <textarea id="comment" class="inp-mark"></textarea>
+            </div>
+            <div class="btns">
+                <button id="reset" type="reset">Очистить</button>
+                <input id="add" type="button" value="Добавить">
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&subset=cyrillic');
+
+.container {
+  font-family: 'Roboto', sans-serif;
+  width: 45em;
+  margin: 0 auto;
+  background-color: #e9e9e9;
+  padding: 1em;
+}
+
+h1 {
+  color: rgba(74, 50, 41, 0.8);
+  margin-bottom: 0.25em; }
+
+.new-review {
+  display: none;
+  padding: 1em; }
+  .new-review__name {
+    margin-top: 0;
+    color: #7e2416;
+    font-weight: bold; }
+  .new-review div {
+    margin: 1em 0;
+    width: 100%; }
+
+.txt-mark {
+  display: inline-block;
+  width: 20%;
+  vertical-align: top; }
+
+.inp-mark {
+  display: inline-block;
+  width: 79%;
+  box-sizing: border-box;
+  resize: vertical; }
+
+.btns {
+  display: flex;
+  justify-content: center; }
+
+textarea {
+  height: 80px; }
+
+button {
+  margin: 0 0.6em; }
+
+.add-review,
+.back {
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  color: #48a2ff; }
+  .add-review:hover,
+  .back:hover {
+    color: #4752ff; }
+
+.card {
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+
+.comment {
+  padding: 1em 0;
+  background-color: #ffffff;
+  margin-bottom: 0.25em; }
+  .comment:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+
+.user,
+.mess,
+.control {
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box; }
+
+.user {
+  width: 15%;
+  padding-left: 1em;
+  font-weight: bold; }
+
+.mess {
+  width: 70%;
+  font-style: italic; }
+
+.control {
+  width: 12%;
+  font-size: 0.8em;
+  cursor: pointer;
+  color: #48a2ff;
+  font-style: italic;
+  padding-left: 0.8em; }
+
+.delete:hover,
+.submit:hover {
+  color: #4752ff;
+  text-decoration: underline; }
+
+.submitted {
+  background-color: #fffbe0;
+}
+
